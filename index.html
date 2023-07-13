@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HnH</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css"  rel="stylesheet">
+    <link href="other.css"  rel="stylesheet">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark rounded" style="margin-left: 100px; margin-right: 100px;padding: 15px;">
+        <a class="navbar-brand" href="{% url 'home' %}">Health Hygiene plus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          
+        </button>
+    
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{% url 'blogs' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blogs
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}">ALL</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=MEN">Men</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=WOMEN">Women </a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=MWNTAL">Mental</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=SKIN">Skin</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=NUTRTION">Nutrition</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=KIDS">Kids</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blogs' %}?category=GENERAL">General</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'explore' %}">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'slides' %}">Slides</a>
+                </li>
+                
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+    </nav>
+    <div style="margin-top:100px"></div>
+    
+    
+    <div class="container">
+        
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 1
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 2
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 3
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 4
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 5
+                    </div>
+                </a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div style="margin-top:40px"></div>
+    <div class="container">       
+        <div class="row text-center">
+            <div class="col-sm">
+                
+                <hr/>               
+               </div>
+            <div class="col-sm">
+                
+             <h3>Categories for you</h3>               
+            </div>
+            <div class="col-sm">
+                <hr/> 
+                                
+               </div>
+        </div>
+    </div>
+    <div style="margin-top:20px"></div>
+    <div class="container">
+        <div class="row text-left">
+            <div class="col-1"></div>
+            <div class="col-sm">
+                
+                    <div>
+                        <img src="./Frame 37.jpg"
+                            alt="..." class="img-thumbnail ">
+            </div>
+                    </div>
+                    <div class="col-1"></div>
+        </div>
+    </div>
+    <div style="margin-top:40px"></div>
+    <div class="container" style="margin-left: 100px;">
+        <div class="row text-left">
+            <div class="col-sm">
+                
+                      <h2>Categorized by <b>AGE</b> </h2> 
+                    
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:30px"></div>
+    <div class="container">
+        
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 1
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 2
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 3
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 4
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="">
+                    <div>
+                        <img src="./CC_20230711_143405.png"
+                            alt="..." class="img-thumbnail rounded-circle    ">
+                    </div>
+                    <div>
+                        Category 5
+                    </div>
+                </a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div style="margin-top:20px"></div>
+    <div class="text-center">
+        <button class ="btn  btn-dark">View all</button>
+    </div>
+    <div style="margin-top:30px"></div>
+   
+    <div class="container">
+        <div class="row text-left"style="margin-left:50px">
+            <div class="col-sm">
+                
+                       <h2><b>Trending </b>articles for you  </h2>
+                    
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:30px" ></div>
+
+    <div class="container" style= "margin-left:100px">
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-sm">
+                <div class="textpos">
+            <div class="square1 rounded">
+                <div class="centered"><h5>Article 1</h5></div>
+            </div>
+                </div>    
+                <div class="text-center row">
+                    <div style="margin-top:30px" ></div>
+                    <div class="col-sm">The article content is as follows.</div>
+                    <div class="col-sm">
+                        <div class="border border-dark rounded">
+                            <button class ="btn  btn-light">Read full article</button></div> 
+                        </div>
+                    </div>
+             </div>
+                 
+             <div class="col-sm">
+                <div class="square2 rounded">
+                    <div class="centered"><h5>Article 2</h5></div>
+                 </div>
+                 <div class="text-center row">
+                    <div style="margin-top:30px" ></div>
+                    <div class="col-sm">The article content is as follows.</div>
+                    <div class="col-sm">
+                        <div class="border border-dark rounded">
+                        <button class ="btn  btn-light">Read full article</button></div>
+                        </div>
+                </div>
+                 </div> 
+                 
+                 <div class="col-1"></div>
+                 
+  
+        </div>
+    </div>
+<div style="margin-top:30px" ></div>
+
+    <div class="container">
+        <div class="textpos">
+        <div class="row text-center">
+            <div class="col-1"></div>
+            <div class="col-sm">
+            <div class="square3 rounded">
+                <div class="centered"><h5>Article 3</h5></div>
+             </div>
+             <div class="text-center row">
+                <div style="margin-top:30px" ></div>
+
+                <div class="col-sm">The article content is as follows.</div>
+                <div class="col-sm">
+                    <div class="border border-dark rounded">
+                    <button class ="btn  btn-light">Read full article</button></div>
+                    </div>
+            </div>
+             </div>    
+             <div class="col-sm">
+                <div class="square4 rounded">
+                    <div class="centered"><h5>Article 4</h5></div>
+                </div>
+                <div class="text-center row " >
+                    <div style="margin-top:30px" ></div>
+
+                    <div class="col-sm">The article content is as follows.</div>
+                    <div class=" col-sm">
+                        <div class="border border-dark rounded">
+                        <button class ="btn  btn-light">Read full article</button></div>
+                        </div>
+                </div>
+            </div>
+                    <div class="col-sm">
+                        <div class="square5 rounded">
+                            <div class="centered"><h5>Article 5</h5></div>
+                         </div>
+                         <div class="text-center row">
+                            <div style="margin-top:30px" ></div>
+                            <div class="col-sm">The article content is as follows.</div>
+                            <div class="col-sm">
+                                <div class="border border-dark rounded">
+                                <button class ="btn  btn-light ">Read full article</button></div>
+                                </div>
+                        </div>
+                         </div> 
+                 </div>
+                 </div> 
+                 <div class="col-1"></div>
+                 
+  
+    </div>
+</div>
+</div>
+<div style="margin-top:40px" ></div>
+<!-- Footer -->
+<footer class=" text-white" style="background-color:#000000;">
+    <!-- Grid container -->
+    <div class="container p-4">
+  
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+  
+      <!-- Section: Form -->
+      <div class="container">
+        
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-left">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Join our daily newsletter</strong>
+              </p>
+            </div>
+        </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="row text-center">
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" value="Email id" />
+                
+              </div>
+            </div>
+        </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="row text-center">
+            <div class="col-auto">
+  
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-light rounded mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+    
+      </section>
+    
+</div>
+      <!-- Section: Form -->
+  
+  
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
